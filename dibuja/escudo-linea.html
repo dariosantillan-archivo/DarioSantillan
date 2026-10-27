@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Escudo del MTD Lanús — versión a línea · Darío dibuja</title>
+<style>:root{--ground:#F5F5F1;--surface:#FCFCFA;--ink:#1A1B18;--muted:#6C6F66;--rule:#DCDCD4;
+ --rule-strong:#C4C5BB;--oxide:#993022;--slate:#33505E;--hi:#FBEFA6;--panel:#EDEDE6}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{background:var(--ground);color:var(--ink);
+ font:15px/1.55 "Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+ -webkit-font-smoothing:antialiased}
+a{color:var(--slate)}
+.volver{display:inline-block;margin-bottom:16px;font-size:13px;color:var(--muted);
+ text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.volver:hover{color:var(--oxide);border-color:var(--oxide)}
+header{padding:40px 0 18px;border-bottom:2px solid var(--ink);margin-bottom:24px}
+h1{margin:0 0 8px;font-size:29px;line-height:1.2;font-weight:600;letter-spacing:-.012em}
+.sub{margin:0;max-width:66ch;font-size:15px;color:var(--muted);line-height:1.6}
+footer{margin-top:52px;padding-top:16px;border-top:1px solid var(--rule);
+ color:var(--muted);font-size:12px}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px 70px}
+header{padding:36px 0 16px;margin-bottom:22px}
+.meta{margin:8px 0 0;font-size:12.5px;color:var(--muted);letter-spacing:.05em;
+ text-transform:uppercase}
+.meta span+span::before{content:"·";padding:0 .5em;color:var(--rule-strong)}
+figure{margin:0 0 8px;padding:16px;background:var(--surface);
+ border:1px solid var(--rule-strong);text-align:center}
+figure img{max-width:100%;height:auto;display:block;margin:0 auto}
+.zoom{margin:0 0 30px;font-size:12px;color:var(--muted)}
+.zoom a{color:var(--slate)}
+dl{margin:0;padding:18px 20px 6px;background:var(--panel);
+ border:1px solid var(--rule);border-radius:4px}
+dt{margin:0 0 3px;font-size:10.5px;letter-spacing:.11em;text-transform:uppercase;
+ font-weight:600;color:var(--muted)}
+dd{margin:0 0 16px;font-size:15.5px;line-height:1.62}
+dd.falta{color:var(--rule-strong)}
+.nav{display:flex;justify-content:space-between;gap:16px;margin:30px 0 0;
+ font-size:13px}
+.nav a{color:var(--slate);text-decoration:none;border-bottom:1px solid var(--rule-strong)}
+.nav a:hover{color:var(--oxide);border-color:var(--oxide)}
+.nav span{color:var(--rule-strong)}
+.aviso{padding:18px 20px;background:var(--panel);border:1px dashed var(--rule-strong);
+ border-radius:4px;color:var(--muted);font-size:14.5px;line-height:1.6}
+@media (max-width:560px){.wrap{padding:0 16px 50px}h1{font-size:23px}figure{padding:9px}}</style></head><body><div class="wrap">
+<header>
+<a class="volver" href="../dario-dibuja.html">&larr; volver a Darío dibuja</a>
+<h1 id="tit">Escudo del MTD Lanús — versión a línea</h1>
+<p class="meta" id="meta"><span>Dibujo a línea, limpiado para reproducción</span><span>Escudo del MTD Lanús</span></p>
+</header>
+<figure><img src="img/escudo-linea.jpg" alt="Escudo del MTD Lanús — versión a línea" width="1700" height="1800"></figure><p class="zoom"><a href="img/escudo-linea.jpg" target="_blank" rel="noopener">Ver a tamaño completo</a> &middot; escaneo original 2173 &times; 2301 px</p>
+<dl id="ficha"><dt>Fecha</dt><dd class="falta">&mdash;</dd><dt>Técnica y soporte</dt><dd>Dibujo a línea, limpiado para reproducción</dd><dt>Medidas del original</dt><dd class="falta">&mdash;</dd><dt>Descripción</dt><dd>El mismo emblema aislado de la hoja de apuntes y pasado a línea pura, listo para fotocopiar o serigrafiar. En el aro: «MOVIMIENTO DE TRABAJADORES DESOCUPADOS LANÚS».</dd><dt>Notas</dt><dd class="falta">&mdash;</dd><dt>Archivo original</dt><dd><code>da_dib_APUNTES21APUNTES21.jpg</code></dd></dl>
+<p class="nav"><a href="escudo-borrador-delegados.html">&larr; Escudo del MTD Lanús — segundo borrador</a><a href="escudo-interior.html">Interior del escudo, aislado &rarr;</a></p>
+</div>
+<script src="datos.js?v=e292423b"></script>
+<script>
+/* La ficha de arriba está escrita en este archivo, pero si datos.js trae otra cosa
+   (porque se editó ahí), gana datos.js. Un solo lugar para corregir los datos. */
+(function(){
+ var SLUG="escudo-linea";
+ var D=window.__DIBUJA__; if(!D) return;
+ var d=null; for(var i=0;i<D.length;i++) if(D[i].slug===SLUG) d=D[i];
+ if(!d) return;
+ function esc(s){return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;")
+  .replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+ function fila(r,v,mono){return v ? "<dt>"+r+"</dt><dd>"+(mono?"<code>":"")+esc(v)
+   +(mono?"</code>":"")+"</dd>" : "<dt>"+r+"</dt><dd class=\"falta\">&mdash;</dd>";}
+ if(d.titulo){document.getElementById("tit").textContent=d.titulo;
+  document.title=d.titulo+" \u00b7 Dar\u00edo dibuja";}
+ var m=[]; if(d.fecha) m.push("<span>"+esc(d.fecha)+"</span>");
+ if(d.sop) m.push("<span>"+esc(d.sop)+"</span>");
+ (d.tags||[]).forEach(function(t){m.push("<span>"+esc(t)+"</span>");});
+ document.getElementById("meta").innerHTML=m.join("");
+ document.getElementById("ficha").innerHTML=
+   fila("Fecha",d.fecha)+fila("T\u00e9cnica y soporte",d.sop)
+  +fila("Medidas del original",d.medidas)+fila("Descripci\u00f3n",d.desc)
+  +fila("Notas",d.notas)+fila("Archivo original",d.orig,true)
+  +((d.dups&&d.dups.length)?fila("Otras copias del mismo original",d.dups.join("  ·  "),true):"");
+})();
+</script></body></html>
